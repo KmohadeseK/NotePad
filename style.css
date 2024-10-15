@@ -1,7 +1,7 @@
 :root {
-  --blueb: #6867b6;
+  --blueb: #347928;
   --black: black;
-  --ligheblue: #f0aecd;
+  --ligheblue:#C0EBA6;
 }
 
 @font-face {
@@ -64,7 +64,7 @@ button {
 }
 
 button:active {
-  background-color: #c9abe7;
+  background-color:var(--ligheblue);
 }
 
 main > h1 {
@@ -87,13 +87,14 @@ hr.hr {
 }
 
 .card {
-  background-color: #e7a8c591;
+  background-color:#F6E96B;
   padding: 1em;
   flex-grow: 1;
   flex-basis: calc(33.33% - 0.5em);
 }
 
 .card button {
+  color: #FFFBE6;
   padding: 8px 20px 8px 20px;
 }
 
@@ -106,6 +107,7 @@ hr.hr {
     flex-basis: calc(50% - 0.5em);
   }
 }
+
 
 @media only screen and (max-width: 480px) {
   form input,
