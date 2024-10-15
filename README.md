@@ -1,5 +1,5 @@
 # lovely Note🧶
-[Demo](https://kmohadesek.github.io/NotePad/)
+## [Demo Link](https://kmohadesek.github.io/NotePad/)
 #### From now on, write it down so you don't forget what your plan is today!
 #### My friend, you can enjoy this small website by entering the title and explaining your daily plans🌞
 
