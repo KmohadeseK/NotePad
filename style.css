@@ -1,0 +1,120 @@
+:root {
+  --blueb: #6867b6;
+  --black: black;
+  --ligheblue: #f0aecd;
+}
+
+@font-face {
+  src: url(Poppins/Poppins-Medium.ttf);
+  font-family: poppins;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+/*Main [start]*/
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 7em;
+}
+
+main form {
+  display: grid;
+  gap: 1em;
+  padding: 2em 0;
+}
+
+form input,
+textarea {
+  padding: 1.3em;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--ligheblue);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form input:hover,
+textarea:hover {
+  outline: 2px solid var(--blueb);
+}
+
+::placeholder {
+  color: var(--blueb);
+}
+
+::selection {
+  background-color: var(--blueb);
+  color: var(--black);
+}
+
+button {
+  border: none;
+  padding: 1.1em;
+  background-color: var(--blueb);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:active {
+  background-color: #c9abe7;
+}
+
+main > h1 {
+  color: var(--black);
+  margin-bottom: 0.8em;
+}
+
+hr.hr {
+  border: 1px solid var(--ligheblue);
+}
+/*Main [end]*/
+
+/*Cards [start]*/
+.cards {
+  color: var(--blueb);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding-block: 1em;
+}
+
+.card {
+  background-color: #e7a8c591;
+  padding: 1em;
+  flex-grow: 1;
+  flex-basis: calc(33.33% - 0.5em);
+}
+
+.card button {
+  padding: 8px 20px 8px 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  main form {
+    padding: 2em 1em;
+  }
+
+  .card {
+    flex-basis: calc(50% - 0.5em);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  form input,
+  textarea {
+    font-size: 14px;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
+/*Cards [end]*/

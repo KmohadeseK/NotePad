@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MAIN [START]-->
+    <main>
+      <form action="#">
+        <input type="text" id="title" placeholder="Title" />
+        <textarea
+          name=""
+          id="text"
+          cols="30"
+          rows="5"
+          placeholder="Type your note..."
+        ></textarea>
+        <button type="button" id="addBtn">Add Note</button>
+        <span id="date"></span>
+      </form>
+
+      <h1>Your Notes</h1>
+      <hr class="hr" />
+      <!-- CARDS [START] -->
+      <div class="cards"></div>
+      <!-- CARDS [END] -->
+    </main>
+    <!-- MAIN [END]-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
